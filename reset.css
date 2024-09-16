@@ -1,0 +1,12 @@
+li{
+    list-style-type: none;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.container{
+    margin: 0 auto;
+    width: 1100px;
+}
+
