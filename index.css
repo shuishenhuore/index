@@ -19,12 +19,13 @@
   color: orange;
 }
 #welcome {
-  height: 600px;
-  background: url('image/welcome.jpg');
+  height: 870px;
+  background: url('image/welcome.jpg') no-repeat;
 }
 #welcome h1 {
   margin: 0px;
   text-align: center;
   padding-top: 250px;
   font-size: 40px;
+  cursor: pointer;
 }
