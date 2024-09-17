@@ -5,6 +5,8 @@
 #topbar .left {
   padding-top: 5px;
   float: left;
+}
+#topbar .left h1 {
   color: aliceblue;
 }
 #topbar .right a {
