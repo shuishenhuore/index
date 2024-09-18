@@ -12,3 +12,8 @@ a{
 body{
     font-family: KaiTi;
 }
+ul,h2{
+    margin: 0px;
+    padding: 0px;
+}
+

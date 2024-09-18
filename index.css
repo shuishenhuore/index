@@ -3,17 +3,41 @@
   height: 80px;
 }
 #topbar .left {
-  padding-top: 5px;
   float: left;
 }
 #topbar .left h1 {
   color: aliceblue;
+  font-size: 30px;
+}
+#topbar .left h1:after {
+  content: '';
+  display: block;
+  height: 5px;
+  width: 0px;
+  border-radius: 5px;
+  transition: width 0.3s;
+  background: linear-gradient(to right, orange, yellow);
+}
+#topbar .left h1:hover::after {
+  width: 120px;
 }
 #topbar .right a {
-  margin: 25px 5px;
+  margin: 25px 10px;
   float: right;
-  font-size: 20px;
+  font-size: 25px;
   color: aliceblue;
+}
+#topbar .right a::after {
+  content: '';
+  display: block;
+  height: 5px;
+  width: 0px;
+  border-radius: 5px;
+  transition: width 0.3s;
+  background: linear-gradient(to right, orange, yellow);
+}
+#topbar .right a:hover::after {
+  width: 50px;
 }
 #topbar .right a:hover {
   color: orange;
@@ -21,11 +45,46 @@
 #welcome {
   height: 870px;
   background: url('image/welcome.jpg') no-repeat;
+  position: relative;
 }
 #welcome h1 {
-  margin: 0px;
+  position: absolute;
+  top: 20px;
+  left: 600px;
   text-align: center;
-  padding-top: 250px;
   font-size: 40px;
   cursor: pointer;
+}
+#welcome h2 {
+  position: absolute;
+  top: 270px;
+  left: 65px;
+  cursor: pointer;
+}
+#welcome h2:after {
+  content: '';
+  display: block;
+  height: 5px;
+  width: 0px;
+  border-radius: 5px;
+  transition: width 0.3s;
+  background: linear-gradient(to right, orange, yellow);
+}
+#welcome h2:hover:after {
+  width: 150px;
+}
+#welcome .tool {
+  position: absolute;
+  top: 305px;
+  left: 35px;
+  height: 120px;
+  width: 215px;
+}
+#welcome li {
+  float: left;
+  padding: 10px 10px;
+  transition: all 0.4s;
+}
+#welcome li:hover {
+  transform: scale(1.5);
 }

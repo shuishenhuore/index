@@ -1,20 +1,41 @@
+@after:{
+    content: '';
+    display: block;
+    height: 5px;
+    width: 0px;
+    border-radius: 5px;
+    transition: width 0.3s;
+    background: linear-gradient(to right,orange,yellow);
+}
+
 #topbar{
     background-color: #252525;
     height: 80px;
     .left{
-        padding-top: 5px;
         float: left;
         h1{
             color: aliceblue;
+            font-size: 30px;
+        }
+        h1:after{
+            @after();
+        }
+        h1:hover::after{
+            width: 120px;
         }
     }
     .right{
-            
-        a{  
-            margin: 25px 5px;
+            a{  
+            margin: 25px 10px;
             float: right;
-            font-size: 20px;
+            font-size: 25px;
             color: aliceblue;
+        }
+        a::after{
+            @after();
+        }
+        a:hover::after{
+            width: 50px;
         }
         a:hover{
             color: orange;
@@ -25,11 +46,41 @@
 #welcome{
     height: 870px;
     background: url('./image/welcome.jpg') no-repeat;
+    position: relative;
     h1{
-        margin: 0px;
+        position: absolute;
+        top: 20px;
+        left: 600px;
         text-align: center;
-        padding-top: 250px;
         font-size: 40px;
         cursor: pointer;
     }
-}
+    h2{
+        position: absolute;
+        top: 270px;
+        left: 65px;
+        cursor: pointer;
+    }
+    h2:after{
+        @after();
+    }
+    h2:hover:after{
+        width: 150px;
+    }
+    .tool{
+        position: absolute;
+        top: 305px;
+        left: 35px;
+        height: 120px;
+        width: 215px;
+        
+    }
+        li{
+            float: left;
+            padding:10px 10px;
+            transition: all 0.4s;
+        }
+        li:hover{
+            transform: scale(1.5);
+        }
+    }
