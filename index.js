@@ -9,8 +9,11 @@ window.onload = function(){
     }
 
     $(function(){
-        $('#h1').hover(function(){
-            $('.introduce').slideToggle();
+        $('#h1').mouseover(function(){
+            $('.introduce').fadeIn(1000);
+        })
+        $('#h1').mouseout(function(){
+            $('.introduce').fadeOut(1000);
         })
     })
 
