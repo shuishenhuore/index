@@ -7,7 +7,7 @@
     transition: width 0.3s;
     background: linear-gradient(to right,orange,yellow);
 }
-
+//顶部的导航栏
 #topbar{
     background-color: #252525;
     height: 80px;
@@ -25,11 +25,11 @@
         }
     }
     .right{
-            a{  
-            margin: 25px 10px;
-            float: right;
-            font-size: 25px;
-            color: aliceblue;
+        a{  
+        margin: 25px 10px;
+        float: right;
+        font-size: 25px;
+        color: aliceblue;
         }
         a::after{
             @after();
@@ -40,9 +40,13 @@
         a:hover{
             color: orange;
         }
+        .music:hover::after{
+            width: 100px;
+        }
     }
 }
 
+//欢迎栏
 #welcome{
     height: 870px;
     position: relative;

@@ -42,6 +42,9 @@
 #topbar .right a:hover {
   color: orange;
 }
+#topbar .right .music:hover::after {
+  width: 100px;
+}
 #welcome {
   height: 870px;
   position: relative;
