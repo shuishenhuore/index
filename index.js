@@ -7,4 +7,11 @@ window.onload = function(){
     lo.onclick = function(){
         lo.src = 'image/爱心2.png';
     }
+
+    $(function(){
+        $('#h1').hover(function(){
+            $('.introduce').slideToggle();
+        })
+    })
+
 }

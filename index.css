@@ -56,13 +56,24 @@
   width: 100%;
   z-index: -1;
 }
-#welcome h1 {
+#welcome #h1 {
   position: absolute;
   top: 20px;
   left: 600px;
   text-align: center;
   font-size: 40px;
   cursor: pointer;
+}
+#welcome .introduce {
+  position: absolute;
+  left: 655px;
+  top: 80px;
+  height: 100px;
+  width: 370px;
+  font-size: 25px;
+  color: #252525;
+  word-wrap: break-word;
+  display: none;
 }
 #welcome h2 {
   position: absolute;
