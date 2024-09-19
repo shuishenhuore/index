@@ -1,20 +1,22 @@
-window.onload = function(){
-    var h1 = document.getElementById('h1');
-    var oLo = document.getElementById('lo')
-    h1.onclick = function(){
+
+$(function(){
+    //点击欢迎字体显示你好呀
+    $('#h1').click(function(){
         alert('你好呀！');
-    }
-    lo.onclick = function(){
-        lo.src = 'image/爱心2.png';
-    }
+    });
 
-    $(function(){
-        $('#h1').mouseover(function(){
-            $('.introduce').fadeIn(1000);
-        })
-        $('#h1').mouseout(function(){
-            $('.introduce').fadeOut(1000);
-        })
-    })
+    //点击灰色爱心照片切换成红色爱心照片
+    $('#lo').click(function(){
+        $('#lo').attr('src','image/爱心2.png');
+    });
 
-}
+    //鼠标移入移出的字体显示
+    $('#h1').mouseover(function(){
+        $('.introduce').fadeIn(1000);
+    });
+    $('#h1').mouseout(function(){
+        $('.introduce').fadeOut(1000);
+    });
+    
+})
+
