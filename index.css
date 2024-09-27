@@ -70,17 +70,16 @@ html {
   background: linear-gradient(to right, orange, yellow);
 }
 #bar .container .right a:hover::after {
-<<<<<<< HEAD
   width: 155px;
-=======
-  width: 65px;
->>>>>>> e858dff32c1fe4f776399891f52dfb90acf7ef0a
 }
 #bar .container .right a:hover {
   color: orange;
 }
 #bar .container .right .music:hover::after {
   width: 125px;
+}
+#bar .container .right .message:hover::after {
+  width: 95px;
 }
 #welcome {
   position: relative;
