@@ -12,10 +12,10 @@ $(function(){
 
     //鼠标移入移出的字体显示
     $('#h1').mouseover(function(){
-        $('.introduce').fadeIn(1000);
+        $('.introduce').fadeIn(500);
     });
     $('#h1').mouseout(function(){
-        $('.introduce').fadeOut(1000);
+        $('.introduce').fadeOut(500);
     });
     
 })

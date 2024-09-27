@@ -1,15 +1,41 @@
-#topbar {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style-type: none;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+.container {
+  margin: 0 auto;
+  width: 70vw;
+}
+body {
+  font-family: 'kaiti', 'Courier New', Courier, monospace;
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+#bar {
   background-color: #252525;
   height: 80px;
+  width: 100%;
 }
-#topbar .left {
+#bar .container .left {
   float: left;
 }
-#topbar .left h1 {
+#bar .container .left h1 {
+  margin-top: 20px;
   color: aliceblue;
   font-size: 30px;
 }
-#topbar .left h1:after {
+#bar .container .left h1:after {
   content: '';
   display: block;
   height: 5px;
@@ -18,16 +44,23 @@
   transition: width 0.3s;
   background: linear-gradient(to right, orange, yellow);
 }
-#topbar .left h1:hover::after {
+#bar .container .left h1:hover::after {
   width: 120px;
 }
-#topbar .right a {
-  margin: 25px 10px;
+#bar .container .right {
   float: right;
-  font-size: 25px;
+  display: flex;
+  font-size: 30px;
+}
+#bar .container .right li {
+  display: block;
+  margin: 20px 10px;
+}
+#bar .container .right a {
+  margin: 25px 5px;
   color: aliceblue;
 }
-#topbar .right a::after {
+#bar .container .right a::after {
   content: '';
   display: block;
   height: 5px;
@@ -36,41 +69,37 @@
   transition: width 0.3s;
   background: linear-gradient(to right, orange, yellow);
 }
-#topbar .right a:hover::after {
-  width: 50px;
+#bar .container .right a:hover::after {
+<<<<<<< HEAD
+  width: 155px;
+=======
+  width: 65px;
+>>>>>>> e858dff32c1fe4f776399891f52dfb90acf7ef0a
 }
-#topbar .right a:hover {
+#bar .container .right a:hover {
   color: orange;
 }
-#topbar .right .music:hover::after {
-  width: 100px;
+#bar .container .right .music:hover::after {
+  width: 125px;
 }
 #welcome {
-  height: 870px;
   position: relative;
   width: 100%;
   height: 100%;
 }
-#welcome #banner {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  object-fit: cover;
-  width: 100%;
-  z-index: -1;
-}
 #welcome #h1 {
   position: absolute;
-  top: 20px;
-  left: 600px;
-  text-align: center;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 40px;
   cursor: pointer;
 }
 #welcome .introduce {
   position: absolute;
-  left: 655px;
-  top: 80px;
+  left: 50%;
+  top: 180px;
+  transform: translateX(-50%);
   height: 100px;
   width: 370px;
   font-size: 25px;
@@ -106,8 +135,17 @@
 #welcome li {
   float: left;
   padding: 10px 10px;
-  transition: all 0.4s;
+  transition: all 0.2s;
 }
 #welcome li:hover {
   transform: scale(1.5);
+}
+#banner {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
 }
